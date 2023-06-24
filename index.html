@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+    />
+     <script>
+      $(document).ready(function(){
+          $("#search_btn").click(function(){
+              
+              var doctor_type = $("#doctor_type").val();
+              var doctor_area = $("#doctor_area").val();
+              
+              $.post("webservices1.php",{search:doctor_type, area:doctor_area}, function(response){
+                  $("#searchSection").html(response);
+              });
+          });
+      });
+  </script>
+    
+  </head>
+ 
+  <body>
+    <div class="index1">
+        
+      
+      <div class="description-section">
+        <div class="description-section-bg"></div>
+        <div class="description-image-area">
+          <div class="image-bg"></div>
+          <img
+            class="doctor-removebg-preview-1-icon"
+            alt=""
+            src="./public/doctorremovebgpreview-1@2x.png"
+          />
+        </div>
+        <div class="description-text-area">
+          <div class="text-content-bg"></div>
+          <div class="description-text">
+            <div class="discovering-a-doctor-container">
+              <p class="discovering-a-doctor">Discovering a doctor you can</p>
+              <p class="discovering-a-doctor">
+                assemble long-terms relationship
+              </p>
+              <p class="discovering-a-doctor">
+                with is useful for your wellbeing
+              </p>
+            </div>
+            <div class="how-well-does-container">
+              <p class="discovering-a-doctor">
+                How well does your primary care doctor know you? Do they see you
+                at
+              </p>
+              <p class="discovering-a-doctor">
+                least once a year? Maybe during this past year, when health has
+                been at
+              </p>
+              <p class="discovering-a-doctor">
+                the forefront, you were able to see this critical caretaker more
+                than once.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="solution-section">
+          <div class="solution-bg"></div>
+          <div class="solution-area-heading">
+          3 easy steps to get your solution
+        </div>
+        
+        <div class="steps-bg">
+            <div class="search-doctor-icon">
+            <div class="search-sq"></div>
+            <img
+              class="search-doctor-emoji"
+              alt=""
+              src="./public/search-doctor-emoji@2x.png"
+            />
+            <div class="search-doctor">Search doctor</div>
+            <div class="search-doctor-des-container">
+              <p class="discovering-a-doctor">How well does your primary</p>
+              <p class="discovering-a-doctor">
+                care doctor knows you? Do they see you atleast once a year.
+              </p>
+            </div>
+            
+          </div>
+          <div class="appointment-icon">
+              <div class="appointment-sq"></div>
+              <img
+              class="appointment-emoji-icon"
+              alt=""
+              src="./public/appointment-emoji@2x.png"
+            />
+            <div class="get-appointment">Get appointment</div>
+            <div class="appointment-des">
+              <p class="discovering-a-doctor">How well does your primary</p>
+              <p class="discovering-a-doctor">
+                care doctor knows you? Do they see you atleast once a year.
+              </p>
+            </div>
+            
+            
+          </div>
+          <div class="consultation-icon">
+              <div class="consultation-sq"></div>
+            <img
+              class="consultation-emoji-icon"
+              alt=""
+              src="./public/consultation-emoji@2x.png"
+            />
+            <div class="get-your-solution">Get your solution</div>
+            <div class="consultation-des">
+              <p class="discovering-a-doctor">How well does your primary</p>
+              <p class="discovering-a-doctor">
+                care doctor knows you? Do they see you atleast once a year.
+              </p>
+            </div>
+            
+            
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      
+      <div id = "searchSection" class="solution-section">
+          <div class="solution-bg"></div>
+          <div class="solution-area-heading">
+          3 easy steps to get your solution
+        </div>
+        <div class="steps-bg">
+            
+            
+             <div class="search-doctor-icon">
+            <div class="search-sq"></div>
+            <img
+              class="search-doctor-emoji"
+              alt=""
+              src="./public/search-doctor-emoji@2x.png"
+            />
+            <div class="search-doctor">Search doctor</div>
+            <div class="search-doctor-des-container">
+              <p class="discovering-a-doctor">How well does your primary</p>
+              <p class="discovering-a-doctor">
+                care doctor knows you? Do they see you atleast once a year.
+              </p>
+            </div>
+            
+          </div>
+          <div class="appointment-icon">
+              <div class="appointment-sq"></div>
+              <img
+              class="appointment-emoji-icon"
+              alt=""
+              src="./public/appointment-emoji@2x.png"
+            />
+            <div class="get-appointment">Get appointment</div>
+            <div class="appointment-des">
+              <p class="discovering-a-doctor">How well does your primary</p>
+              <p class="discovering-a-doctor">
+                care doctor knows you? Do they see you atleast once a year.
+              </p>
+            </div>
+            
+            
+          </div>
+          <div class="consultation-icon">
+              <div class="consultation-sq"></div>
+            <img
+              class="consultation-emoji-icon"
+              alt=""
+              src="./public/consultation-emoji@2x.png"
+            />
+            <div class="get-your-solution">Get your solution</div>
+            <div class="consultation-des">
+              <p class="discovering-a-doctor">How well does your primary</p>
+              <p class="discovering-a-doctor">
+                care doctor knows you? Do they see you atleast once a year.
+              </p>
+            </div>
+            
+            
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="banner-section-bg"></div>
+        <div class="banner-image-section">
+          <div class="banner-image-section1"></div>
+          <img class="image-icon" alt="" src="./public/image@2x.png" />
+        </div>
+        <div class="form-section">
+          <div class="form-section-bg"></div>
+          <div class="form-content-section">
+            <div class="finding-a-doctor-container">
+              <span>Finding a </span>
+              <span class="doctor">doctor </span>
+              <span>you can build long </span>
+              <span class="doctor">relationship</span>
+              <span> with is good for your health.</span>
+            </div>
+            <div class="what-if-one">
+              What if one website could help you find just the doctor you’re
+              looking for? Healthgrades can help you find a doctor based on
+              confidence, not chance.
+            </div>
+            <div class="all-buttons-section" data-scroll-to="allButtonsSection">
+              <div class="categorylocation-bg"></div>
+              <input
+              id = "doctor_type"
+                class="doctor-selection-button"
+                type="text"
+                placeholder="Find your doctor"
+                maxlength
+                minlength
+              />
+
+              <input
+              id = "doctor_area"
+                class="location-selection-button"
+                type="text"
+                placeholder="Select Location"
+                maxlength
+                minlength
+              />
+
+              <div class="search-button">
+                <div class="search-doctors-bg"></div>
+                <img id = "search_btn" 
+                  class="outline-search-white-24dp-1-icon"
+                  alt=""
+                  src="./public/outline-search-white-24dp-1@2x.png"
+                />
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-section">
+        <div class="navigation-bg"></div>
+        <a class="doctory-logo" href="/" id="doctoryLogo">
+          <span>Do</span>
+          <span class="ct">ct</span>
+          <span>ory</span>
+        </a>
+        <div class="navigation-tabs">
+          <a class="home" href="home.html" id="home">Home</a>
+          <a class="services" href="services.html" id="services">Services</a>
+          <a class="about" href="about.html" id="about">About</a>
+          <a class="sign-up-tab" id="signUpTab">
+            <div class="sign-up-sq" data-scroll-to="signUpSq"></div>
+            <div class="get-started" id="getStartedText">Get Started</div>
+          </a>
+        </div>
+      </div>
+      <script>
+      var doctoryLogo = document.getElementById("doctoryLogo");
+      if (doctoryLogo) {
+        doctoryLogo.addEventListener("click", function () {
+          window.open("/");
+        });
+      }
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function () {
+          window.open("home.html");
+        });
+      }
+      
+      var services = document.getElementById("services");
+      if (services) {
+        services.addEventListener("click", function () {
+          window.open("services.html");
+        });
+      }
+      
+      var about = document.getElementById("about");
+      if (about) {
+        about.addEventListener("click", function () {
+          window.open("about.html");
+        });
+      }
+      
+      var getStartedText = document.getElementById("getStartedText");
+      if (getStartedText) {
+        getStartedText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='signUpSq']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var signUpTab = document.getElementById("signUpTab");
+      if (signUpTab) {
+        signUpTab.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='allButtonsSection']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      </script>
+      
+      
+    </div>
+
+    
+  </body>
+  
+  
+</html>

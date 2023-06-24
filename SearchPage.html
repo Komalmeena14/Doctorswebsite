@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./SearchPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="searchpage">
+      <div class="solution-section1">
+        <div class="solution-section-bg"></div>
+        <div class="solution-area-material1">
+          <div class="doctorfound-heading">
+            <p class="doctors-found">Doctors Found</p>
+          </div>
+          <div class="steps-bg1">
+            <div class="doctorsection3">
+              <div class="circlebg"></div>
+              <div class="doctor-name">Doctor Name</div>
+              <div class="doctor-information">
+                <p class="doctors-found">Doctor Information</p>
+                <p class="doctors-found">&nbsp;</p>
+              </div>
+              <img
+                class="consultation-emoji-icon1"
+                alt=""
+                src="./public/consultation-emoji1@2x.png"
+              />
+            </div>
+            <div class="doctorsection2">
+              <div class="circlebg1"></div>
+              <div class="doctor-name1">Doctor Name</div>
+              <div class="doctor-information2">Doctor Information</div>
+              <img
+                class="appointment-emoji-icon1"
+                alt=""
+                src="./public/appointment-emoji1@2x.png"
+              />
+            </div>
+            <div class="doctorsection1">
+              <div class="circlebg2"></div>
+              <div class="doctor-name2">Doctor Name</div>
+              <div class="doctor-information3">
+                <p class="doctors-found">Doctor Information</p>
+              </div>
+              <img
+                class="search-doctor-emoji1"
+                alt=""
+                src="./public/search-doctor-emoji1@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-section1">
+        <div class="navigation-bg1"></div>
+        <a class="doctory-logo1" href="/" id="doctoryLogo">
+          <span>Do</span>
+          <span class="ct1">ct</span>
+          <span>ory</span>
+        </a>
+        <div class="navigation-tabs1">
+          <a class="home1" href="home.html" id="home">Home</a>
+          <a class="services1" href="services.html" id="services">Services</a>
+          <a class="about1" href="about.html" id="about">About</a>
+          <a class="sign-up-tab1" id="signUpTab">
+            <div class="sign-up-sq1" data-scroll-to="signUpSq"></div>
+            <div class="get-started1" id="getStartedText">Get Started</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var doctoryLogo = document.getElementById("doctoryLogo");
+      if (doctoryLogo) {
+        doctoryLogo.addEventListener("click", function () {
+          window.open("/");
+        });
+      }
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function () {
+          window.open("home.html");
+        });
+      }
+      
+      var services = document.getElementById("services");
+      if (services) {
+        services.addEventListener("click", function () {
+          window.open("services.html");
+        });
+      }
+      
+      var about = document.getElementById("about");
+      if (about) {
+        about.addEventListener("click", function () {
+          window.open("about.html");
+        });
+      }
+      
+      var getStartedText = document.getElementById("getStartedText");
+      if (getStartedText) {
+        getStartedText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='signUpSq']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var signUpTab = document.getElementById("signUpTab");
+      if (signUpTab) {
+        signUpTab.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='allButtonsSection']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
